@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# uv
+.venv/
+venv/
+
+# 비밀값
+.env
+config/secrets.yaml
+*.key
+
+# 로그 / 캐시
+logs/
+*.log
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# 노트북
+.ipynb_checkpoints/
+notebooks/**/outputs/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Others
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
