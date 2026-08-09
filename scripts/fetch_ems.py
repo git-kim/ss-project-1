@@ -63,7 +63,7 @@ def request_page(station, year_month, page_no):
     return response.json()
 
 def fetch_month(station, year_month):
-    save_path = f"{OUT}/{station}_{year_month}.json"
+    save_path = f"{OUT}/{station}/{station}_{year_month}.json"
     if os.path.exists(save_path):
         return station, year_month, SKIPPED
 
@@ -110,6 +110,7 @@ started_at = time.time()
 
 for completed, (station, year_month) in enumerate(tasks, 1):
     try:
+        os.makedirs(f"{OUT}/{station}", exist_ok=True)
         station, year_month, result = fetch_month_with_attempts(station, year_month)
     except QuotaExceeded as error:
         print(f"Stopped: {error}")
