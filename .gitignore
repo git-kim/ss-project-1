@@ -36,3 +36,5 @@ notebooks/**/outputs/
 *.swp
 .DS_Store
 Thumbs.db
+
+data/raw/
