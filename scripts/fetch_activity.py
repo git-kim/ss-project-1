@@ -113,8 +113,6 @@ for completed, (station, year_month) in enumerate(tasks, 1):
         os.makedirs(f"{OUT}/{station}", exist_ok=True)
         station, year_month, result = fetch_month_with_attempts(station, year_month)
 
-        break
-
     except QuotaExceeded as error:
         print(f"Stopped: {error}")
         break
