@@ -21,7 +21,7 @@ MONTHS = [f"{year}{month:02d}"
 MAX_RPS = 10 # less than 30 tps
 WORKERS = 4
 ROWS = 4000
-OUT = './data/raw';
+OUT = './data/raw/구급환자이송정보';
 
 os.makedirs(OUT, exist_ok=True)
 
