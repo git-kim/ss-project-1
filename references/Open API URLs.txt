@@ -1,0 +1,5 @@
+구급환자이송정보
+https://apis.data.go.kr/1661000/EmergencyInformationService/getEmgPatientTransferInfo?serviceKey={service-key-here}&pageNo={}&numOfRows={}&resultType=json&rsacGutFsttOgidNm={출동소방서}&stmtYm={yyyymm}
+
+구급활동정보
+https://apis.data.go.kr/1661000/EmergencyInformationService/getEmgencyActivityInfo?serviceKey={service-key-here}&pageNo={}&numOfRows={}&resultType=json&rsacGutFsttOgidNm={출동소방서}&gutYm={yyyymm}
