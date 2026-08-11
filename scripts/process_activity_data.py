@@ -1,6 +1,7 @@
 from pathlib import Path
 import pandas as pd
-from modules.area_name_mapper import get_area_name_from_fire_station_name
+from project_modules.area_name_mapper import get_area_name_from_fire_station_name
+from project_modules.common import PROJECT_DIRECTORY_PATH
 
 def process(root_directory: str, output_root_directory: str, prefix: str) -> None:
     root_path = Path(root_directory)
@@ -56,7 +57,7 @@ def process(root_directory: str, output_root_directory: str, prefix: str) -> Non
         with output_file.open("w", encoding="utf-8") as f:
             data.to_csv(f, index=False, encoding="utf-8")
 
-project_directory = Path(__file__).resolve().parent.parent
+project_directory = PROJECT_DIRECTORY_PATH
 
 raw_data_root_directory = project_directory / "data/raw/구급활동정보"
 interim_data_root_directory = project_directory / "data/interim"

@@ -1,4 +1,4 @@
-MAP = {
+COLUMN_NAME_MAP = {
     "anmlInctCdNm": "동물곤충원인",
     "cptcSeCdNm": "관할구분",
     "egrcSidoCdNm": "긴급구조시",
@@ -29,5 +29,5 @@ MAP = {
     "wmhtDamgCdNm": "온열손상"
 }
 
-def interpret_column(column_name: str) -> str | None:
-    return MAP.get(column_name, None)
+def get_readable_column_name(column_name: str) -> str | None:
+    return COLUMN_NAME_MAP.get(column_name, None)
