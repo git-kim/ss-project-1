@@ -1,0 +1,22 @@
+           column  missing_count  missing_ratio  valid_count
+  ptntOccrTyCd3Nm        1232933      98.620596        17245
+  ptntOccrTyCd1Nm        1179500      94.346565        70678
+  ptntOccrTyCd2Nm        1081980      86.546076       168198
+     ruptSptmCdNm         376717      30.133069       873461
+   emtpQlcClCd2Nm         281995      22.556388       968183
+  ruptOccrPlcCdNm         160525      12.840172      1089653
+   emtpQlcClCd1Nm          22640       1.810942      1227538
+   emtpQlcClCd3Nm           9872       0.789648      1240306
+           frnrAt           2813       0.225008      1247365
+       cptcSeCdNm            610       0.048793      1249568
+     rcptPathCdNm            199       0.015918      1249979
+     egrcSiggCdNm             15       0.001200      1250163
+            gutHh              3       0.000240      1250175
+       sptMvmnDtc              1       0.000080      1250177
+     sidoHqOgidNm              0       0.000000      1250178
+      source_file              0       0.000000      1250178
+     egrcSidoCdNm              0       0.000000      1250178
+    ptntSdtSeCdNm              0       0.000000      1250178
+rsacGutFsttOgidNm              0       0.000000      1250178
+            gutYm              0       0.000000      1250178
+          ptntAge              0       0.000000      1250178

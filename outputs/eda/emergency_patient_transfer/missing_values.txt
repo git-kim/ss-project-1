@@ -1,0 +1,15 @@
+           column  missing_count  missing_ratio  valid_count
+     wmhtDamgCdNm        1226051      99.950679          605
+     anmlInctCdNm        1223520      99.744346         3136
+   rlifAcdAsmCdNm         896974      73.123516       329682
+       ptntTyCdNm         157338      12.826579      1069318
+   rlifOccrTyCdNm          42446       3.460302      1184210
+  ruptOccrPlcCdNm          22119       1.803195      1204537
+           frnrAt           1348       0.109892      1225308
+    ptntSdtSeCdNm              0       0.000000      1226656
+      source_file              0       0.000000      1226656
+     sidoHqOgidNm              0       0.000000      1226656
+           stmtYm              0       0.000000      1226656
+rsacGutFsttOgidNm              0       0.000000      1226656
+          ptntAge              0       0.000000      1226656
+           stmtHh              0       0.000000      1226656

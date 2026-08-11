@@ -1,0 +1,1651 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="714.296875pt" height="568.8pt" viewBox="0 0 714.296875 568.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-11T15:15:22.766458</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 568.8 
+L 714.296875 568.8 
+L 714.296875 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 58.496875 372.3 
+L 707.096875 372.3 
+L 707.096875 22.8 
+L 58.496875 22.8 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 87.978693 372.3 
+L 677.615057 372.3 
+L 677.615057 39.442857 
+L 87.978693 39.442857 
+z
+" clip-path="url(#pae585488e7)" style="fill: #1f77b4; fill-opacity: 0.5; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mf4defced7c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mf4defced7c" x="146.94233" y="372.3" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <!-- 158.6 -->
+      <g transform="translate(133.308736 387.3) scale(0.1 -0.1)">
+       <defs>
+        <path id="NanumGothic-12" d="M 2362 -211 
+Q 2362 -301 2272 -301 
+L 2010 -301 
+Q 1920 -301 1920 -211 
+L 1920 3949 
+Q 1722 3782 1549 3635 
+Q 1376 3488 1184 3322 
+Q 1114 3264 1056 3334 
+L 928 3488 
+Q 909 3520 909 3555 
+Q 909 3590 941 3616 
+L 1933 4448 
+Q 1958 4474 2010 4474 
+L 2182 4474 
+Q 2317 4474 2339 4451 
+Q 2362 4429 2362 4294 
+L 2362 -211 
+z
+" transform="scale(0.015625)"/>
+        <path id="NanumGothic-16" d="M 736 -205 
+Q 646 -173 646 -90 
+L 646 179 
+Q 646 288 736 243 
+Q 966 134 1187 89 
+Q 1408 45 1670 45 
+Q 2234 45 2586 320 
+Q 2970 614 2970 1165 
+Q 2970 2246 1734 2246 
+Q 1491 2246 1296 2220 
+Q 1101 2195 864 2131 
+Q 794 2112 749 2147 
+Q 704 2182 704 2253 
+L 742 4294 
+Q 742 4429 764 4451 
+Q 787 4474 922 4474 
+L 3110 4474 
+Q 3200 4474 3200 4384 
+L 3200 4173 
+Q 3200 4083 3110 4083 
+L 1178 4083 
+Q 1171 3680 1161 3296 
+Q 1152 2912 1146 2509 
+Q 1459 2630 1907 2630 
+Q 2579 2630 2995 2266 
+Q 3411 1888 3411 1254 
+Q 3411 480 2931 58 
+Q 2470 -346 1670 -346 
+Q 1382 -346 1171 -314 
+Q 960 -282 736 -205 
+z
+" transform="scale(0.015625)"/>
+        <path id="NanumGothic-19" d="M 2944 3360 
+Q 2944 3725 2624 3936 
+Q 2342 4134 1965 4134 
+Q 1555 4134 1274 3930 
+Q 966 3725 966 3360 
+Q 966 3027 1286 2758 
+Q 1376 2675 1526 2579 
+Q 1677 2483 1882 2387 
+Q 1933 2362 1965 2365 
+Q 1997 2368 2061 2400 
+Q 2470 2624 2707 2870 
+Q 2944 3117 2944 3360 
+z
+M 3104 960 
+Q 3104 1312 2784 1574 
+Q 2682 1658 2496 1760 
+Q 2310 1862 2042 1984 
+Q 1958 2029 1856 1984 
+Q 1606 1888 1414 1782 
+Q 1222 1677 1107 1587 
+Q 979 1459 899 1289 
+Q 819 1120 819 928 
+Q 819 538 1184 288 
+Q 1517 38 1965 38 
+Q 2426 38 2739 256 
+Q 3104 506 3104 960 
+z
+M 3552 928 
+Q 3552 614 3421 364 
+Q 3290 115 3046 -51 
+Q 2835 -192 2560 -269 
+Q 2285 -346 1965 -346 
+Q 1651 -346 1379 -262 
+Q 1107 -179 883 -32 
+Q 640 141 505 387 
+Q 371 634 371 928 
+Q 371 1427 704 1741 
+Q 960 1984 1491 2182 
+Q 518 2662 518 3411 
+Q 518 3680 652 3888 
+Q 787 4096 1030 4262 
+Q 1235 4390 1468 4457 
+Q 1702 4525 1965 4525 
+Q 2272 4525 2515 4457 
+Q 2758 4390 2957 4256 
+Q 3398 3949 3398 3411 
+Q 3398 2746 2400 2182 
+Q 2662 2086 2870 1971 
+Q 3078 1856 3206 1741 
+Q 3552 1434 3552 928 
+z
+" transform="scale(0.015625)"/>
+        <path id="NanumGothic-f" d="M 691 -256 
+Q 691 -122 784 -29 
+Q 877 64 1011 64 
+Q 1146 64 1238 -29 
+Q 1331 -122 1331 -256 
+Q 1331 -390 1238 -483 
+Q 1146 -576 1011 -576 
+Q 877 -576 784 -483 
+Q 691 -390 691 -256 
+z
+" transform="scale(0.015625)"/>
+        <path id="NanumGothic-17" d="M 3078 1203 
+Q 3078 1722 2810 2022 
+Q 2541 2330 2042 2330 
+Q 1786 2330 1581 2250 
+Q 1376 2170 1232 2029 
+Q 1088 1888 1008 1689 
+Q 928 1491 928 1254 
+Q 928 768 1197 435 
+Q 1491 45 1984 45 
+Q 2490 45 2797 384 
+Q 3078 704 3078 1203 
+z
+M 3245 4013 
+Q 3098 4064 2909 4096 
+Q 2720 4128 2534 4128 
+Q 1664 4128 1248 3501 
+Q 896 2976 883 2061 
+Q 1024 2317 1293 2496 
+Q 1626 2733 2042 2733 
+Q 2624 2733 3021 2426 
+Q 3526 2035 3526 1235 
+Q 3526 557 3110 109 
+Q 2688 -346 1971 -346 
+Q 435 -346 435 1920 
+Q 435 3104 909 3770 
+Q 1466 4525 2586 4525 
+Q 2752 4525 2934 4499 
+Q 3117 4474 3270 4429 
+Q 3366 4410 3354 4314 
+L 3341 4077 
+Q 3341 4032 3309 4016 
+Q 3277 4000 3245 4013 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-16" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-19" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-f" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-17" transform="translate(212.078125 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mf4defced7c" x="264.869602" y="372.3" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <!-- 158.8 -->
+      <g transform="translate(251.236009 387.3) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-16" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-19" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-f" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-19" transform="translate(212.078125 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mf4defced7c" x="382.796875" y="372.3" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <!-- 159.0 -->
+      <g transform="translate(369.163281 387.3) scale(0.1 -0.1)">
+       <defs>
+        <path id="NanumGothic-1a" d="M 2995 2925 
+Q 2995 3424 2726 3763 
+Q 2432 4128 1946 4128 
+Q 1427 4128 1133 3802 
+Q 845 3494 845 2982 
+Q 845 2438 1107 2138 
+L 1101 2138 
+Q 1376 1843 1882 1843 
+Q 2406 1843 2701 2138 
+Q 2995 2445 2995 2925 
+z
+M 653 -256 
+Q 557 -237 570 -109 
+L 589 115 
+Q 602 192 691 154 
+Q 851 90 1014 64 
+Q 1178 38 1382 38 
+Q 1830 38 2163 214 
+Q 2496 390 2707 717 
+Q 3027 1254 3040 2080 
+Q 2650 1453 1882 1453 
+Q 1293 1453 896 1754 
+Q 390 2144 390 2950 
+Q 390 3661 806 4083 
+Q 1229 4525 1958 4525 
+Q 3494 4525 3494 2259 
+Q 3494 -346 1338 -346 
+Q 1043 -346 653 -256 
+z
+" transform="scale(0.015625)"/>
+        <path id="NanumGothic-11" d="M 3066 2093 
+Q 3066 4102 1965 4102 
+Q 864 4102 864 2093 
+Q 864 77 1965 77 
+Q 3066 77 3066 2093 
+z
+M 3526 2093 
+Q 3526 -326 1965 -326 
+Q 390 -326 390 2093 
+Q 390 3098 698 3725 
+Q 1088 4512 1965 4512 
+Q 2829 4512 3226 3725 
+Q 3373 3411 3449 3008 
+Q 3526 2605 3526 2093 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-16" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-1a" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-f" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(212.078125 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mf4defced7c" x="500.724148" y="372.3" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <!-- 159.2 -->
+      <g transform="translate(487.090554 387.3) scale(0.1 -0.1)">
+       <defs>
+        <path id="NanumGothic-13" d="M 576 -301 
+Q 506 -301 470 -297 
+Q 435 -294 419 -278 
+Q 403 -262 400 -227 
+Q 397 -192 397 -122 
+L 403 19 
+Q 403 102 454 154 
+L 1510 1318 
+Q 2688 2592 2688 3251 
+Q 2688 3635 2432 3891 
+Q 2182 4141 1811 4141 
+Q 1293 4141 730 3853 
+Q 640 3808 627 3891 
+L 589 4102 
+Q 570 4211 653 4237 
+Q 979 4384 1241 4454 
+Q 1504 4525 1779 4525 
+Q 2394 4525 2758 4218 
+Q 3168 3885 3168 3270 
+Q 3168 3034 3053 2752 
+Q 2938 2470 2733 2163 
+Q 2605 1984 2371 1696 
+Q 2138 1408 1837 1082 
+Q 1613 838 1392 588 
+Q 1171 339 947 96 
+L 3187 96 
+Q 3277 96 3277 6 
+L 3277 -211 
+Q 3277 -301 3187 -301 
+L 576 -301 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-16" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-1a" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-f" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-13" transform="translate(212.078125 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mf4defced7c" x="618.65142" y="372.3" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <!-- 159.4 -->
+      <g transform="translate(605.017827 387.3) scale(0.1 -0.1)">
+       <defs>
+        <path id="NanumGothic-15" d="M 2509 1216 
+L 2509 4070 
+Q 2035 3354 1568 2643 
+Q 1101 1933 621 1216 
+L 2509 1216 
+z
+M 2944 -211 
+Q 2944 -301 2854 -301 
+L 2598 -301 
+Q 2509 -301 2509 -211 
+L 2509 826 
+L 397 826 
+Q 262 826 240 848 
+Q 218 870 218 1005 
+L 218 1203 
+Q 218 1261 224 1280 
+Q 230 1299 262 1350 
+L 2304 4397 
+Q 2342 4454 2358 4464 
+Q 2374 4474 2445 4474 
+L 2765 4474 
+Q 2899 4474 2921 4451 
+Q 2944 4429 2944 4294 
+L 2944 1216 
+L 3578 1216 
+Q 3667 1216 3667 1126 
+L 3667 915 
+Q 3667 826 3578 826 
+L 2944 826 
+L 2944 -211 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-16" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-1a" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-f" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-15" transform="translate(212.078125 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_6">
+     <!-- 지점 -->
+     <g transform="translate(373.396875 401.3) scale(0.1 -0.1)">
+      <defs>
+       <path id="NanumGothic-ad1" d="M 3827 858 
+Q 3808 826 3779 819 
+Q 3750 813 3699 851 
+Q 3546 966 3373 1116 
+Q 3200 1267 3033 1436 
+Q 2867 1606 2707 1788 
+Q 2547 1971 2413 2150 
+Q 2093 1747 1683 1379 
+Q 1274 1011 749 646 
+Q 717 627 685 617 
+Q 653 608 634 634 
+L 480 832 
+Q 454 864 460 899 
+Q 467 934 493 954 
+Q 1517 1677 2089 2419 
+Q 2662 3162 2886 3968 
+Q 2912 4058 2889 4099 
+Q 2867 4141 2778 4141 
+L 838 4141 
+Q 762 4141 762 4224 
+L 762 4448 
+Q 762 4525 851 4525 
+L 2950 4525 
+Q 3283 4525 3372 4409 
+Q 3462 4294 3373 4000 
+Q 3123 3181 2669 2496 
+Q 2816 2291 2982 2092 
+Q 3149 1894 3315 1718 
+Q 3482 1542 3648 1398 
+Q 3814 1254 3962 1158 
+Q 3994 1133 3994 1101 
+Q 3994 1069 3974 1043 
+L 3827 858 
+z
+M 5152 -806 
+Q 5152 -896 5062 -896 
+L 4800 -896 
+Q 4710 -896 4710 -806 
+L 4710 4915 
+Q 4710 5005 4800 5005 
+L 5062 5005 
+Q 5152 5005 5152 4915 
+L 5152 -806 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-a7c" d="M 1498 819 
+Q 1498 1088 1600 1181 
+Q 1702 1274 1984 1274 
+L 4666 1274 
+Q 4819 1274 4912 1254 
+Q 5005 1235 5059 1184 
+Q 5114 1133 5133 1043 
+Q 5152 954 5152 819 
+L 5152 -390 
+Q 5152 -659 5049 -752 
+Q 4947 -845 4666 -845 
+L 1984 -845 
+Q 1830 -845 1737 -825 
+Q 1645 -806 1590 -752 
+Q 1536 -698 1517 -611 
+Q 1498 -525 1498 -390 
+L 1498 819 
+z
+M 2093 890 
+Q 2003 890 1971 854 
+Q 1939 819 1939 723 
+L 1939 -294 
+Q 1939 -390 1971 -425 
+Q 2003 -461 2093 -461 
+L 4557 -461 
+Q 4646 -461 4678 -425 
+Q 4710 -390 4710 -294 
+L 4710 723 
+Q 4710 819 4678 854 
+Q 4646 890 4557 890 
+L 2093 890 
+z
+M 3309 4205 
+Q 3219 3942 3056 3686 
+Q 2893 3430 2669 3181 
+Q 2886 2950 3206 2742 
+Q 3526 2534 3904 2374 
+Q 3955 2355 3961 2320 
+Q 3968 2285 3949 2253 
+L 3821 2022 
+Q 3802 1990 3763 1987 
+Q 3725 1984 3693 1997 
+Q 3552 2061 3389 2150 
+Q 3226 2240 3053 2355 
+Q 2880 2470 2710 2604 
+Q 2541 2739 2394 2886 
+Q 2029 2528 1590 2233 
+Q 1152 1939 704 1741 
+Q 672 1728 640 1721 
+Q 608 1715 589 1747 
+L 461 1971 
+Q 442 2003 458 2038 
+Q 474 2074 506 2086 
+Q 1331 2483 1913 2995 
+Q 2496 3507 2822 4179 
+Q 2867 4269 2835 4307 
+Q 2803 4346 2714 4346 
+L 838 4346 
+Q 762 4346 762 4429 
+L 762 4653 
+Q 762 4730 838 4730 
+L 2886 4730 
+Q 3219 4730 3315 4611 
+Q 3411 4493 3309 4205 
+z
+M 4710 3520 
+L 4710 4915 
+Q 4710 5005 4800 5005 
+L 5062 5005 
+Q 5152 5005 5152 4915 
+L 5152 1728 
+Q 5152 1638 5062 1638 
+L 4800 1638 
+Q 4710 1638 4710 1728 
+L 4710 3136 
+L 3526 3136 
+Q 3443 3136 3443 3213 
+L 3443 3443 
+Q 3443 3520 3526 3520 
+L 4710 3520 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#NanumGothic-ad1"/>
+      <use xlink:href="#NanumGothic-a7c" transform="translate(94 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <defs>
+       <path id="mbbd1324ee5" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="372.3" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <!-- 0 -->
+      <g transform="translate(45.4375 376.3) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-11"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="330.106366" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <!-- 10000 -->
+      <g transform="translate(21.2 334.106366) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(242.375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="287.912731" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <!-- 20000 -->
+      <g transform="translate(21.2 291.912731) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-13"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(242.375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="245.719097" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- 30000 -->
+      <g transform="translate(21.2 249.719097) scale(0.1 -0.1)">
+       <defs>
+        <path id="NanumGothic-14" d="M 493 -192 
+Q 397 -166 410 -45 
+L 435 205 
+Q 448 282 538 243 
+Q 806 134 1046 89 
+Q 1286 45 1606 38 
+Q 2112 32 2458 294 
+Q 2861 563 2861 1082 
+Q 2861 1990 1498 1990 
+L 1165 1990 
+Q 1082 1990 1082 2061 
+L 1082 2298 
+Q 1082 2381 1165 2381 
+L 1197 2381 
+Q 1882 2381 2266 2528 
+Q 2848 2752 2848 3334 
+Q 2848 3520 2749 3677 
+Q 2650 3834 2483 3942 
+Q 2330 4032 2138 4083 
+Q 1946 4134 1734 4134 
+Q 1517 4134 1254 4076 
+Q 992 4019 749 3923 
+Q 666 3891 653 3974 
+L 627 4211 
+Q 608 4301 710 4339 
+Q 998 4435 1248 4480 
+Q 1498 4525 1779 4525 
+Q 2426 4525 2835 4250 
+Q 3302 3936 3302 3334 
+Q 3302 2906 2995 2592 
+Q 2739 2317 2330 2189 
+Q 2534 2163 2710 2080 
+Q 2886 1997 3014 1850 
+Q 3162 1690 3238 1488 
+Q 3315 1286 3315 1043 
+Q 3315 723 3184 464 
+Q 3053 205 2810 19 
+Q 2573 -154 2265 -253 
+Q 1958 -352 1581 -346 
+Q 1242 -339 995 -307 
+Q 749 -275 493 -192 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#NanumGothic-14"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(242.375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="203.525463" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <!-- 40000 -->
+      <g transform="translate(21.2 207.525463) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-15"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(242.375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="161.331828" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <!-- 50000 -->
+      <g transform="translate(21.2 165.331828) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-16"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(242.375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="119.138194" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <!-- 60000 -->
+      <g transform="translate(21.2 123.138194) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-17"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(242.375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="76.944559" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <!-- 70000 -->
+      <g transform="translate(21.2 80.944559) scale(0.1 -0.1)">
+       <defs>
+        <path id="NanumGothic-18" d="M 1549 -211 
+Q 1504 -301 1421 -301 
+L 1101 -301 
+Q 1062 -301 1046 -275 
+Q 1030 -250 1050 -211 
+L 2912 4083 
+L 538 4083 
+Q 448 4083 448 4173 
+L 448 4384 
+Q 448 4474 538 4474 
+L 3194 4474 
+Q 3328 4474 3350 4451 
+Q 3373 4429 3373 4294 
+L 3373 4134 
+Q 3373 4083 3354 4045 
+L 1549 -211 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#NanumGothic-18"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(242.375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="34.750925" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <!-- 80000 -->
+      <g transform="translate(21.2 38.750925) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-19"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(121.1875 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(181.78125 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(242.375 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_16">
+     <!-- Count -->
+     <g transform="translate(15.2 211.814063) rotate(-90) scale(0.1 -0.1)">
+      <defs>
+       <path id="NanumGothic-24" d="M 3834 186 
+Q 3872 198 3904 188 
+Q 3936 179 3936 141 
+L 3949 -109 
+Q 3955 -192 3859 -224 
+Q 3648 -294 3424 -326 
+Q 3200 -358 2861 -358 
+Q 1747 -358 1088 320 
+Q 762 653 605 1094 
+Q 448 1536 448 2093 
+Q 448 3187 1107 3866 
+Q 1779 4544 2861 4544 
+Q 3014 4544 3139 4537 
+Q 3264 4531 3382 4518 
+Q 3501 4506 3616 4486 
+Q 3731 4467 3859 4435 
+Q 3955 4416 3949 4314 
+L 3936 4058 
+Q 3923 3968 3840 4000 
+Q 3590 4083 3366 4112 
+Q 3142 4141 2861 4141 
+Q 1958 4141 1421 3565 
+Q 922 3008 922 2093 
+Q 922 1632 1043 1261 
+Q 1165 890 1414 614 
+Q 1933 38 2861 45 
+Q 3130 51 3395 83 
+Q 3661 115 3834 186 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-50" d="M 3130 1453 
+Q 3130 1754 3050 2016 
+Q 2970 2278 2829 2483 
+Q 2496 2893 1965 2893 
+Q 1696 2893 1481 2787 
+Q 1267 2682 1101 2483 
+Q 954 2278 874 2016 
+Q 794 1754 794 1453 
+Q 794 1146 874 883 
+Q 954 621 1101 422 
+Q 1440 6 1965 6 
+Q 2234 6 2448 115 
+Q 2662 224 2829 422 
+Q 2970 621 3050 883 
+Q 3130 1146 3130 1453 
+z
+M 3603 1453 
+Q 3603 1075 3494 752 
+Q 3386 429 3206 186 
+Q 2982 -83 2672 -230 
+Q 2362 -378 1965 -378 
+Q 1568 -378 1254 -230 
+Q 941 -83 717 186 
+Q 538 429 432 752 
+Q 326 1075 326 1453 
+Q 326 2227 717 2720 
+Q 1165 3277 1965 3277 
+Q 2368 3277 2675 3139 
+Q 2982 3002 3206 2720 
+Q 3603 2214 3603 1453 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-56" d="M 3347 -186 
+Q 3347 -275 3258 -275 
+L 3027 -275 
+Q 2938 -275 2938 -186 
+L 2938 346 
+Q 2771 -38 2492 -208 
+Q 2214 -378 1792 -378 
+Q 595 -378 595 960 
+L 595 3098 
+Q 595 3187 685 3187 
+L 941 3187 
+Q 1030 3187 1030 3098 
+L 1030 1075 
+Q 1030 -13 1862 -13 
+Q 2106 -13 2301 92 
+Q 2496 198 2630 380 
+Q 2765 563 2835 806 
+Q 2906 1050 2899 1318 
+L 2899 3098 
+Q 2899 3187 2989 3187 
+L 3245 3187 
+Q 3334 3187 3334 3098 
+L 3334 525 
+Q 3334 314 3337 147 
+Q 3341 -19 3347 -186 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-4f" d="M 3334 -186 
+Q 3334 -275 3245 -275 
+L 2989 -275 
+Q 2899 -275 2899 -186 
+L 2899 1830 
+Q 2899 2419 2688 2665 
+Q 2477 2912 2093 2912 
+Q 1574 2912 1302 2624 
+Q 1030 2336 1030 1818 
+L 1030 -186 
+Q 1030 -275 941 -275 
+L 685 -275 
+Q 595 -275 595 -186 
+L 595 2374 
+Q 595 2650 592 2803 
+Q 589 2957 576 3098 
+Q 570 3142 598 3164 
+Q 627 3187 666 3187 
+L 896 3187 
+Q 986 3187 986 3098 
+L 986 2746 
+Q 1165 3021 1417 3149 
+Q 1670 3277 2112 3277 
+Q 2720 3277 3027 2925 
+Q 3334 2573 3334 1933 
+L 3334 -186 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-55" d="M 2208 -282 
+Q 1939 -378 1677 -378 
+Q 1158 -378 992 -38 
+Q 883 192 883 774 
+L 883 2816 
+L 282 2816 
+Q 192 2816 192 2906 
+L 192 3098 
+Q 192 3187 282 3187 
+L 883 3187 
+L 883 4051 
+Q 883 4147 966 4147 
+L 1235 4147 
+Q 1318 4147 1318 4051 
+L 1318 3187 
+L 2029 3187 
+Q 2118 3187 2118 3098 
+L 2118 2906 
+Q 2118 2816 2029 2816 
+L 1318 2816 
+L 1318 557 
+Q 1318 -13 1779 -13 
+Q 1958 -13 2182 64 
+Q 2214 77 2243 64 
+Q 2272 51 2272 13 
+L 2285 -154 
+Q 2298 -243 2208 -282 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#NanumGothic-24"/>
+      <use xlink:href="#NanumGothic-50" transform="translate(67.203125 0)"/>
+      <use xlink:href="#NanumGothic-56" transform="translate(127.796875 0)"/>
+      <use xlink:href="#NanumGothic-4f" transform="translate(188.390625 0)"/>
+      <use xlink:href="#NanumGothic-55" transform="translate(248.984375 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_15">
+    <path d="M 382.796875 372.3 
+L 382.796875 22.8 
+" clip-path="url(#pae585488e7)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #1f77b4; stroke-width: 1.5"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 382.796875 372.3 
+L 382.796875 22.8 
+" clip-path="url(#pae585488e7)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #1f77b4; stroke-width: 1.5"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 58.496875 372.3 
+L 58.496875 22.8 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 707.096875 372.3 
+L 707.096875 22.8 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 58.496875 372.3 
+L 707.096875 372.3 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 58.496875 22.8 
+L 707.096875 22.8 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_17">
+    <!-- 지점 - Distribution -->
+    <g transform="translate(333.64 16.8) scale(0.12 -0.12)">
+     <defs>
+      <path id="NanumGothic-1" transform="scale(0.015625)"/>
+      <path id="NanumGothic-e" d="M 1946 2419 
+Q 2016 2419 2025 2409 
+Q 2035 2400 2035 2330 
+L 2035 2048 
+Q 2035 1978 2025 1968 
+Q 2016 1958 1946 1958 
+L 448 1958 
+Q 378 1958 368 1968 
+Q 358 1978 358 2048 
+L 358 2330 
+Q 358 2400 368 2409 
+Q 378 2419 448 2419 
+L 1946 2419 
+z
+" transform="scale(0.015625)"/>
+      <path id="NanumGothic-25" d="M 3706 2131 
+Q 3706 3149 3142 3635 
+Q 2643 4064 1773 4064 
+L 1082 4064 
+L 1082 128 
+L 1472 128 
+Q 3706 128 3706 2131 
+z
+M 4173 2106 
+Q 4173 1510 3968 1043 
+Q 3763 576 3398 269 
+Q 3053 6 2560 -134 
+Q 2067 -275 1446 -275 
+L 787 -275 
+Q 653 -275 630 -252 
+Q 608 -230 608 -96 
+L 608 4282 
+Q 608 4416 630 4438 
+Q 653 4461 787 4461 
+L 1792 4461 
+Q 3008 4461 3622 3802 
+Q 4173 3194 4173 2106 
+z
+" transform="scale(0.015625)"/>
+      <path id="NanumGothic-4a" d="M 1050 -186 
+Q 1050 -275 960 -275 
+L 678 -275 
+Q 589 -275 589 -186 
+L 589 3098 
+Q 589 3187 678 3187 
+L 960 3187 
+Q 1050 3187 1050 3098 
+L 1050 -186 
+z
+M 506 4397 
+Q 506 4525 595 4617 
+Q 685 4710 813 4710 
+Q 941 4710 1033 4617 
+Q 1126 4525 1126 4397 
+Q 1126 4269 1033 4179 
+Q 941 4090 813 4090 
+Q 685 4090 595 4179 
+Q 506 4269 506 4397 
+z
+" transform="scale(0.015625)"/>
+      <path id="NanumGothic-54" d="M 422 147 
+Q 813 -13 1229 -13 
+Q 1574 -13 1798 156 
+Q 2022 326 2022 614 
+Q 2022 781 1897 937 
+Q 1773 1094 1594 1197 
+Q 1395 1306 1187 1405 
+Q 979 1504 787 1613 
+Q 557 1741 448 1929 
+Q 339 2118 339 2323 
+Q 339 2560 428 2739 
+Q 518 2918 672 3040 
+Q 826 3162 1030 3219 
+Q 1235 3277 1466 3277 
+Q 1709 3277 1888 3251 
+Q 2067 3226 2246 3174 
+Q 2285 3162 2313 3136 
+Q 2342 3110 2336 3066 
+L 2317 2874 
+Q 2310 2822 2278 2809 
+Q 2246 2797 2214 2810 
+Q 2054 2867 1894 2889 
+Q 1734 2912 1510 2912 
+Q 768 2912 768 2323 
+Q 768 2195 867 2080 
+Q 966 1965 1203 1850 
+Q 1408 1747 1606 1654 
+Q 1805 1562 2035 1434 
+Q 2234 1325 2365 1101 
+Q 2496 877 2496 614 
+Q 2496 358 2393 172 
+Q 2291 -13 2118 -134 
+Q 1946 -256 1722 -317 
+Q 1498 -378 1261 -378 
+Q 1120 -378 1008 -371 
+Q 896 -365 797 -352 
+Q 698 -339 595 -320 
+Q 493 -301 378 -269 
+Q 288 -237 294 -154 
+L 320 83 
+Q 333 186 422 147 
+z
+" transform="scale(0.015625)"/>
+      <path id="NanumGothic-53" d="M 2221 2797 
+Q 2106 2835 1914 2835 
+Q 1440 2835 1210 2368 
+Q 1030 2003 1030 1434 
+L 1030 -186 
+Q 1030 -275 941 -275 
+L 691 -275 
+Q 602 -275 602 -186 
+L 602 2413 
+Q 602 2643 598 2787 
+Q 595 2931 589 3098 
+Q 589 3187 678 3187 
+L 915 3187 
+Q 1005 3187 1005 3098 
+L 1005 2470 
+Q 1318 3277 1926 3277 
+Q 2074 3277 2221 3238 
+Q 2259 3226 2288 3197 
+Q 2317 3168 2317 3117 
+L 2317 2848 
+Q 2317 2810 2285 2797 
+Q 2253 2784 2221 2797 
+z
+" transform="scale(0.015625)"/>
+      <path id="NanumGothic-43" d="M 3066 1478 
+Q 3072 1747 3017 2003 
+Q 2963 2259 2841 2464 
+Q 2720 2669 2518 2793 
+Q 2317 2918 2022 2918 
+Q 1760 2918 1565 2806 
+Q 1370 2694 1242 2496 
+Q 1114 2298 1050 2035 
+Q 986 1773 986 1478 
+Q 986 1190 1066 924 
+Q 1146 659 1283 460 
+Q 1421 262 1609 144 
+Q 1798 26 2022 26 
+Q 2317 26 2518 150 
+Q 2720 275 2841 480 
+Q 2963 685 3017 947 
+Q 3072 1210 3066 1478 
+z
+M 557 4749 
+Q 557 4838 646 4838 
+L 896 4838 
+Q 986 4838 986 4749 
+L 986 2707 
+Q 1146 2970 1440 3126 
+Q 1734 3283 2099 3283 
+Q 3526 3283 3526 1478 
+Q 3533 1120 3453 790 
+Q 3373 461 3193 211 
+Q 3014 -38 2742 -188 
+Q 2470 -339 2099 -339 
+Q 1331 -339 986 314 
+L 986 -186 
+Q 986 -275 896 -275 
+L 646 -275 
+Q 557 -275 557 -186 
+L 557 4749 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#NanumGothic-ad1"/>
+     <use xlink:href="#NanumGothic-a7c" transform="translate(94 0)"/>
+     <use xlink:href="#NanumGothic-1" transform="translate(188 0)"/>
+     <use xlink:href="#NanumGothic-e" transform="translate(216 0)"/>
+     <use xlink:href="#NanumGothic-1" transform="translate(252.296875 0)"/>
+     <use xlink:href="#NanumGothic-25" transform="translate(280.296875 0)"/>
+     <use xlink:href="#NanumGothic-4a" transform="translate(353 0)"/>
+     <use xlink:href="#NanumGothic-54" transform="translate(377.203125 0)"/>
+     <use xlink:href="#NanumGothic-55" transform="translate(419.609375 0)"/>
+     <use xlink:href="#NanumGothic-53" transform="translate(455.90625 0)"/>
+     <use xlink:href="#NanumGothic-4a" transform="translate(492.203125 0)"/>
+     <use xlink:href="#NanumGothic-43" transform="translate(516.40625 0)"/>
+     <use xlink:href="#NanumGothic-56" transform="translate(577 0)"/>
+     <use xlink:href="#NanumGothic-55" transform="translate(637.59375 0)"/>
+     <use xlink:href="#NanumGothic-4a" transform="translate(673.890625 0)"/>
+     <use xlink:href="#NanumGothic-50" transform="translate(698.09375 0)"/>
+     <use xlink:href="#NanumGothic-4f" transform="translate(758.6875 0)"/>
+    </g>
+   </g>
+   <g id="legend_1">
+    <g id="patch_8">
+     <path d="M 620.317188 60.8 
+L 700.096875 60.8 
+Q 702.096875 60.8 702.096875 58.8 
+L 702.096875 29.8 
+Q 702.096875 27.8 700.096875 27.8 
+L 620.317188 27.8 
+Q 618.317188 27.8 618.317188 29.8 
+L 618.317188 58.8 
+Q 618.317188 60.8 620.317188 60.8 
+z
+" style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+    </g>
+    <g id="line2d_17">
+     <path d="M 622.317188 36.3 
+L 632.317188 36.3 
+L 642.317188 36.3 
+" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #1f77b4; stroke-width: 1.5"/>
+    </g>
+    <g id="text_18">
+     <!-- IQR Lower -->
+     <g transform="translate(650.317188 39.8) scale(0.1 -0.1)">
+      <defs>
+       <path id="NanumGothic-2a" d="M 1069 -186 
+Q 1069 -275 979 -275 
+L 672 -275 
+Q 582 -275 582 -186 
+L 582 4371 
+Q 582 4461 672 4461 
+L 979 4461 
+Q 1069 4461 1069 4371 
+L 1069 -186 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-32" d="M 4160 2093 
+Q 4160 2925 3770 3494 
+Q 3328 4141 2534 4141 
+Q 1734 4141 1293 3494 
+Q 902 2925 902 2093 
+Q 902 1261 1293 691 
+Q 1734 45 2534 45 
+Q 3328 45 3770 691 
+Q 4160 1261 4160 2093 
+z
+M 4294 -1069 
+Q 4326 -1101 4316 -1129 
+Q 4307 -1158 4269 -1158 
+L 3904 -1158 
+Q 3776 -1158 3686 -1069 
+L 2931 -326 
+Q 2848 -339 2752 -348 
+Q 2656 -358 2534 -358 
+Q 1517 -358 966 326 
+Q 448 966 435 2093 
+Q 429 3117 934 3802 
+Q 1222 4154 1628 4349 
+Q 2035 4544 2534 4544 
+Q 3034 4544 3437 4349 
+Q 3840 4154 4128 3802 
+Q 4634 3117 4627 2093 
+Q 4621 1670 4534 1305 
+Q 4448 941 4301 653 
+Q 4147 358 3913 137 
+Q 3680 -83 3379 -198 
+L 4294 -1069 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-33" d="M 3002 3078 
+Q 3002 3347 2941 3536 
+Q 2880 3725 2736 3843 
+Q 2592 3962 2361 4013 
+Q 2131 4064 1786 4064 
+L 1126 4064 
+L 1126 2157 
+L 1798 2157 
+Q 2061 2157 2281 2221 
+Q 2502 2285 2662 2406 
+Q 2822 2528 2912 2697 
+Q 3002 2867 3002 3078 
+z
+M 3763 -186 
+Q 3776 -218 3763 -246 
+Q 3750 -275 3712 -275 
+L 3379 -275 
+Q 3283 -275 3238 -186 
+Q 2950 416 2758 797 
+Q 2566 1178 2458 1402 
+Q 2323 1664 2253 1805 
+Q 2106 1773 1981 1766 
+Q 1856 1760 1664 1754 
+L 1126 1754 
+L 1126 -186 
+Q 1126 -275 1037 -275 
+L 749 -275 
+Q 659 -275 659 -186 
+L 659 4269 
+Q 659 4339 662 4377 
+Q 666 4416 685 4435 
+Q 704 4454 742 4457 
+Q 781 4461 851 4461 
+L 2061 4461 
+Q 2426 4461 2691 4361 
+Q 2957 4262 3133 4083 
+Q 3309 3904 3395 3648 
+Q 3482 3392 3482 3078 
+Q 3482 2886 3414 2713 
+Q 3347 2541 3232 2393 
+Q 3117 2246 2966 2128 
+Q 2816 2010 2656 1933 
+L 3763 -186 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-2d" d="M 2912 128 
+Q 3002 128 3002 38 
+L 3002 -186 
+Q 3002 -275 2912 -275 
+L 838 -275 
+Q 749 -275 701 -272 
+Q 653 -269 630 -246 
+Q 608 -224 605 -173 
+Q 602 -122 602 -32 
+L 602 4371 
+Q 602 4461 691 4461 
+L 986 4461 
+Q 1075 4461 1075 4371 
+L 1075 128 
+L 2912 128 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-58" d="M 4218 -205 
+Q 4198 -275 4115 -275 
+L 3738 -275 
+Q 3661 -275 3635 -205 
+L 2726 2739 
+Q 2490 1997 2253 1267 
+Q 2016 538 1779 -198 
+Q 1760 -275 1664 -275 
+L 1312 -275 
+Q 1267 -275 1238 -262 
+Q 1210 -250 1197 -198 
+L 128 3098 
+Q 115 3130 134 3158 
+Q 154 3187 192 3187 
+L 486 3187 
+Q 563 3187 602 3098 
+L 1510 179 
+Q 1747 915 1974 1622 
+Q 2202 2330 2438 3066 
+Q 2470 3187 2586 3187 
+L 2886 3187 
+Q 3008 3187 3040 3066 
+L 3930 179 
+Q 4173 934 4400 1638 
+Q 4627 2342 4870 3098 
+Q 4883 3136 4915 3161 
+Q 4947 3187 4986 3187 
+L 5242 3187 
+Q 5280 3187 5299 3158 
+Q 5318 3130 5306 3098 
+L 4218 -205 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-46" d="M 2733 1696 
+Q 2733 1958 2681 2163 
+Q 2630 2368 2522 2534 
+Q 2285 2912 1837 2912 
+Q 1376 2912 1088 2528 
+Q 973 2355 896 2131 
+Q 819 1907 813 1696 
+L 2733 1696 
+z
+M 813 1331 
+Q 806 1011 886 764 
+Q 966 518 1120 352 
+Q 1274 186 1488 96 
+Q 1702 6 1965 6 
+Q 2221 6 2445 54 
+Q 2669 102 2861 211 
+Q 2944 250 2944 166 
+L 2944 -122 
+Q 2944 -179 2874 -211 
+Q 2662 -294 2432 -336 
+Q 2202 -378 1933 -378 
+Q 1146 -378 742 80 
+Q 339 538 339 1459 
+Q 339 2272 742 2771 
+Q 1165 3277 1811 3277 
+Q 2170 3277 2432 3149 
+Q 2694 3021 2880 2765 
+Q 3206 2310 3206 1549 
+Q 3206 1466 3203 1421 
+Q 3200 1376 3181 1357 
+Q 3162 1338 3114 1334 
+Q 3066 1331 2976 1331 
+L 813 1331 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#NanumGothic-2a"/>
+      <use xlink:href="#NanumGothic-32" transform="translate(24.203125 0)"/>
+      <use xlink:href="#NanumGothic-33" transform="translate(102.90625 0)"/>
+      <use xlink:href="#NanumGothic-1" transform="translate(165.109375 0)"/>
+      <use xlink:href="#NanumGothic-2d" transform="translate(193.109375 0)"/>
+      <use xlink:href="#NanumGothic-50" transform="translate(241.515625 0)"/>
+      <use xlink:href="#NanumGothic-58" transform="translate(302.109375 0)"/>
+      <use xlink:href="#NanumGothic-46" transform="translate(386.90625 0)"/>
+      <use xlink:href="#NanumGothic-53" transform="translate(441.40625 0)"/>
+     </g>
+    </g>
+    <g id="line2d_18">
+     <path d="M 622.317188 51.3 
+L 632.317188 51.3 
+L 642.317188 51.3 
+" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #1f77b4; stroke-width: 1.5"/>
+    </g>
+    <g id="text_19">
+     <!-- IQR Upper -->
+     <g transform="translate(650.317188 54.8) scale(0.1 -0.1)">
+      <defs>
+       <path id="NanumGothic-36" d="M 1088 1376 
+Q 1088 768 1402 416 
+Q 1754 26 2342 26 
+Q 2944 26 3296 416 
+Q 3456 589 3529 829 
+Q 3603 1069 3603 1376 
+L 3603 4384 
+Q 3603 4474 3693 4474 
+L 3987 4474 
+Q 4077 4474 4077 4384 
+L 4077 1376 
+Q 4077 909 3923 553 
+Q 3770 198 3482 -26 
+Q 3014 -378 2342 -378 
+Q 1677 -378 1210 -26 
+Q 614 416 614 1376 
+L 614 4384 
+Q 614 4474 704 4474 
+L 998 4474 
+Q 1088 4474 1088 4384 
+L 1088 1376 
+z
+" transform="scale(0.015625)"/>
+       <path id="NanumGothic-51" d="M 2989 1504 
+Q 2989 1766 2937 2012 
+Q 2886 2259 2764 2451 
+Q 2643 2643 2451 2761 
+Q 2259 2880 1971 2880 
+Q 1709 2880 1517 2771 
+Q 1325 2662 1200 2473 
+Q 1075 2285 1011 2035 
+Q 947 1786 947 1504 
+Q 947 762 1225 381 
+Q 1504 0 1971 0 
+Q 2214 0 2403 105 
+Q 2592 211 2723 409 
+Q 2854 608 2921 883 
+Q 2989 1158 2989 1504 
+z
+M 518 3098 
+Q 518 3187 608 3187 
+L 851 3187 
+Q 941 3187 941 3098 
+L 909 2618 
+Q 1037 2899 1341 3072 
+Q 1645 3245 2048 3245 
+Q 2426 3245 2691 3110 
+Q 2957 2976 3126 2742 
+Q 3296 2509 3376 2189 
+Q 3456 1869 3456 1504 
+Q 3456 1107 3363 768 
+Q 3270 429 3094 179 
+Q 2918 -70 2656 -214 
+Q 2394 -358 2048 -358 
+Q 1658 -358 1376 -208 
+Q 1094 -58 947 211 
+L 947 -1165 
+Q 947 -1254 858 -1254 
+L 614 -1254 
+Q 576 -1254 547 -1228 
+Q 518 -1203 518 -1165 
+L 518 3098 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#NanumGothic-2a"/>
+      <use xlink:href="#NanumGothic-32" transform="translate(24.203125 0)"/>
+      <use xlink:href="#NanumGothic-33" transform="translate(102.90625 0)"/>
+      <use xlink:href="#NanumGothic-1" transform="translate(165.109375 0)"/>
+      <use xlink:href="#NanumGothic-36" transform="translate(193.109375 0)"/>
+      <use xlink:href="#NanumGothic-51" transform="translate(265.8125 0)"/>
+      <use xlink:href="#NanumGothic-51" transform="translate(326.40625 0)"/>
+      <use xlink:href="#NanumGothic-46" transform="translate(387 0)"/>
+      <use xlink:href="#NanumGothic-53" transform="translate(441.5 0)"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_9">
+    <path d="M 58.496875 530.6 
+L 707.096875 530.6 
+L 707.096875 414.1 
+L 58.496875 414.1 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#mf4defced7c" x="123.208539" y="530.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <!-- 152 -->
+      <g transform="translate(114.119476 545.6) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-16" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-13" transform="translate(121.1875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#mf4defced7c" x="197.376635" y="530.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <!-- 154 -->
+      <g transform="translate(188.287572 545.6) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-16" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-15" transform="translate(121.1875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#mf4defced7c" x="271.544731" y="530.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <!-- 156 -->
+      <g transform="translate(262.455668 545.6) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-16" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-17" transform="translate(121.1875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#mf4defced7c" x="345.712827" y="530.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <!-- 158 -->
+      <g transform="translate(336.623764 545.6) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-16" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-19" transform="translate(121.1875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#mf4defced7c" x="419.880923" y="530.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <!-- 160 -->
+      <g transform="translate(410.791861 545.6) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-17" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-11" transform="translate(121.1875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#mf4defced7c" x="494.049019" y="530.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_25">
+      <!-- 162 -->
+      <g transform="translate(484.959957 545.6) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-17" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-13" transform="translate(121.1875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#mf4defced7c" x="568.217115" y="530.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_26">
+      <!-- 164 -->
+      <g transform="translate(559.128053 545.6) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-17" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-15" transform="translate(121.1875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#mf4defced7c" x="642.385211" y="530.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_27">
+      <!-- 166 -->
+      <g transform="translate(633.296149 545.6) scale(0.1 -0.1)">
+       <use xlink:href="#NanumGothic-12"/>
+       <use xlink:href="#NanumGothic-17" transform="translate(60.59375 0)"/>
+       <use xlink:href="#NanumGothic-17" transform="translate(121.1875 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_28">
+     <!-- 지점 -->
+     <g transform="translate(373.396875 559.6) scale(0.1 -0.1)">
+      <use xlink:href="#NanumGothic-ad1"/>
+      <use xlink:href="#NanumGothic-a7c" transform="translate(94 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_10">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#mbbd1324ee5" x="58.496875" y="472.35" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="patch_10">
+    <path d="M 382.796875 425.75 
+L 382.796875 518.95 
+L 382.796875 518.95 
+L 382.796875 425.75 
+L 382.796875 425.75 
+z
+" clip-path="url(#pc03ad2f70a)" style="fill: #3274a1; stroke: #3f3f3f; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_28">
+    <path d="M 382.796875 472.35 
+L 382.796875 472.35 
+" clip-path="url(#pc03ad2f70a)" style="fill: none; stroke: #3f3f3f"/>
+   </g>
+   <g id="line2d_29">
+    <path d="M 382.796875 472.35 
+L 382.796875 472.35 
+" clip-path="url(#pc03ad2f70a)" style="fill: none; stroke: #3f3f3f"/>
+   </g>
+   <g id="line2d_30">
+    <path d="M 382.796875 449.05 
+L 382.796875 495.65 
+" clip-path="url(#pc03ad2f70a)" style="fill: none; stroke: #3f3f3f; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_31">
+    <path d="M 382.796875 449.05 
+L 382.796875 495.65 
+" clip-path="url(#pc03ad2f70a)" style="fill: none; stroke: #3f3f3f; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_32"/>
+   <g id="line2d_33">
+    <path d="M 382.796875 425.75 
+L 382.796875 518.95 
+" clip-path="url(#pc03ad2f70a)" style="fill: none; stroke: #3f3f3f"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 58.496875 530.6 
+L 58.496875 414.1 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 707.096875 530.6 
+L 707.096875 414.1 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 58.496875 530.6 
+L 707.096875 530.6 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 58.496875 414.1 
+L 707.096875 414.1 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pae585488e7">
+   <rect x="58.496875" y="22.8" width="648.6" height="349.5"/>
+  </clipPath>
+  <clipPath id="pc03ad2f70a">
+   <rect x="58.496875" y="414.1" width="648.6" height="116.5"/>
+  </clipPath>
+ </defs>
+</svg>

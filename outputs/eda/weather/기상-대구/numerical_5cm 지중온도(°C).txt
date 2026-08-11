@@ -1,0 +1,1 @@
+NumericalColumnAnalysis(column='5cm 지중온도(°C)', count=78888, missing_count=78888, missing_ratio=100.0, valid_count=0, unique_count=0, statistics=None, iqr=None, domain=NumericalDomainAnalysis(lower=None, upper=None, outlier_count=0), outlier_count=0, outlier_ratio=0.0)

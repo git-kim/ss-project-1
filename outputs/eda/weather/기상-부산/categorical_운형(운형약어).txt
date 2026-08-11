@@ -1,0 +1,70 @@
+   value  count     ratio
+     NaN  36579 46.368269
+      Ci  10934 13.860156
+      Sc   8477 10.745614
+    ScAs   6054  7.674171
+    StNs   3855  4.886675
+    ScCi   3635  4.607798
+      Ac   2027  2.569466
+    ScAc   1714  2.172701
+    AcCi   1433  1.816499
+      As   1151  1.459031
+      St    829  1.050857
+  ScAcCi    475  0.602119
+    ScNs    245  0.310567
+    StAs    164  0.207890
+      Cs    162  0.205354
+    CcCi    160  0.202819
+      Cc    101  0.128030
+    CuSc     82  0.103945
+      Ns     78  0.098874
+  ScCcCi     74  0.093804
+    ScCc     74  0.093804
+    AcCc     66  0.083663
+  CbStNs     64  0.081128
+  AcCcCi     55  0.069719
+    StCi     41  0.051972
+  CuScCi     39  0.049437
+    ScCs     37  0.046902
+  ScAcCc     33  0.041831
+    CsCi     27  0.034226
+  CuScAc     27  0.034226
+      Cu     23  0.029155
+ScAcCcCi     22  0.027888
+    CuCi     15  0.019014
+    AsCi     14  0.017747
+CuScAcCi     11  0.013944
+  ScCsCi     10  0.012676
+CuScAcCc     10  0.012676
+    StAc      9  0.011409
+  CuScAs      8  0.010141
+    CuAc      7  0.008873
+  CbScNs      6  0.007606
+    StSc      5  0.006338
+  CuScNs      4  0.005070
+  ScAsCi      4  0.005070
+  CuCcCi      4  0.005070
+CuScCcCi      4  0.005070
+    AsAc      4  0.005070
+    AcCs      3  0.003803
+  StScAs      3  0.003803
+  StScNs      3  0.003803
+  AcCsCi      3  0.003803
+    CbNs      3  0.003803
+  CuScCc      2  0.002535
+CbCuScAc      2  0.002535
+  CbCuSc      2  0.002535
+  ScAcCs      2  0.002535
+  StAcCi      1  0.001268
+    CuAs      1  0.001268
+    CbSc      1  0.001268
+  CbCuNs      1  0.001268
+  CbStAs      1  0.001268
+CbStAcCc      1  0.001268
+  CbStAc      1  0.001268
+CbScAcCc      1  0.001268
+  CuAcCi      1  0.001268
+  ScAsAc      1  0.001268
+    CbSt      1  0.001268
+  StNsCi      1  0.001268
+  CbScCi      1  0.001268

@@ -1,0 +1,9 @@
+D:\ss-project-1\data\raw\기상-부산\SURFACE_ASOS_159_HR_2017_2017_2018.csv	8760 rows	27 columns	loaded
+D:\ss-project-1\data\raw\기상-부산\SURFACE_ASOS_159_HR_2018_2018_2019.csv	8760 rows	27 columns	loaded
+D:\ss-project-1\data\raw\기상-부산\SURFACE_ASOS_159_HR_2019_2019_2020.csv	8760 rows	27 columns	loaded
+D:\ss-project-1\data\raw\기상-부산\SURFACE_ASOS_159_HR_2020_2020_2021.csv	8784 rows	27 columns	loaded
+D:\ss-project-1\data\raw\기상-부산\SURFACE_ASOS_159_HR_2021_2021_2022.csv	8760 rows	27 columns	loaded
+D:\ss-project-1\data\raw\기상-부산\SURFACE_ASOS_159_HR_2022_2022_2023.csv	8760 rows	27 columns	loaded
+D:\ss-project-1\data\raw\기상-부산\SURFACE_ASOS_159_HR_2023_2023_2024.csv	8760 rows	27 columns	loaded
+D:\ss-project-1\data\raw\기상-부산\SURFACE_ASOS_159_HR_2024_2024_2025.csv	8784 rows	27 columns	loaded
+D:\ss-project-1\data\raw\기상-부산\SURFACE_ASOS_159_HR_2025_2025_2026.csv	8760 rows	27 columns	loaded
