@@ -105,6 +105,22 @@ def load_data_files_into_single_dataframe(input_path: str, is_recursive: bool,
 
     return dataframe, file_info
 
+def load_data_files_in_specific_directory(directory: str | Path, encoding: str)\
+    -> pd.DataFrame:
+    file_paths = find_data_files(directory, is_recursive=False)
+
+    dataframes = [
+        read_data_file_into_dataframe(path, encoding)
+        for path in file_paths
+    ]
+
+    dataframes = [df for df in dataframes if not df.empty]
+
+    if not dataframes:
+        return pd.DataFrame()
+
+    return pd.concat(dataframes, ignore_index=True, sort=False)
+
 def save_dataframe_as_csv(dataframe: pd.DataFrame, output_path: str | Path,
                           encoding: str) -> None:
     path = Path(output_path)

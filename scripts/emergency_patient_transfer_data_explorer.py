@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import koreanize_matplotlib
+import pandas as pd
 from project_modules.common import PROJECT_DIRECTORY_PATH, sanitize_filename
 
 from data_modules.data_io import (
@@ -15,7 +16,8 @@ from data_modules.data_analysis import (
     classify_columns,
     # plot_categorical_distribution,
     plot_missing_values,
-    plot_numerical_distribution
+    plot_numerical_distribution,
+    get_unique_values
     )
 
 RAW_DATA_ENCODING = "utf-8"
@@ -28,6 +30,20 @@ NUMERIC_CONFIG = {
     "stmtHh": (0, 23),
     "ptntAge": (0, 140)
 }
+
+def save_unique_values(dataframe: pd.DataFrame) -> None:
+    output_path = BASE_OUTPUT_PATH
+
+    unique_values_dict = {}
+
+    for column in dataframe.columns:
+        if column == "source_file":
+            continue
+        unique_values = get_unique_values(dataframe[column])
+        unique_values_dict[column] = unique_values
+
+    save_text(unique_values_dict,
+              output_path / "unique_values.txt", encoding=DESIRED_ENCODING)
 
 def explore_all() -> None:
     output_path = BASE_OUTPUT_PATH
@@ -89,6 +105,8 @@ def explore_all() -> None:
             save_figure(figure,
                         output_path / sanitize_filename(f"numerical_{column}"),
                         should_close=True)
+
+    save_unique_values(dataframe)
 
 def main() -> None:
     explore_all()

@@ -89,6 +89,11 @@ def get_basic_information(dataframe: pd.DataFrame) -> dict[str, object]:
         "total_missing": int(dataframe.isna().sum().sum())
         }
 
+def get_unique_values(series: pd.Series) -> pd.Series:
+    nan_value = "NaN" if series.hasnans else "No NaN"
+    result = series.dropna().unique().tolist()
+    return nan_value, result
+
 def analyze_missing_values(dataframe: pd.DataFrame) -> pd.DataFrame:
     missing_count = dataframe.isna().sum()
 
@@ -299,24 +304,24 @@ def get_row_reasons(row: pd.Series,
 
     if outlier_analyses:
         for analysis in outlier_analyses:
-            column = analysis["column"]
+            column = analysis.column
             value = row[column]
 
             if pd.isna(value):
                 continue
 
-            iqr = analysis["iqr"]
+            iqr = analysis.iqr
 
-            if value < iqr["lower"] or value > iqr["upper"]:
+            if value < iqr.lower or value > iqr.upper:
                 reasons.append(f"{column}=outlier")
                 continue
 
-            domain = analysis["domain"]
+            domain = analysis.domain
 
-            if domain["lower"] is not None and value < domain["lower"]:
+            if domain.lower is not None and value < domain.lower:
                 reasons.append(f"{column}=out_of_range")
 
-            if domain["upper"] is not None and value > domain["upper"]:
+            if domain.upper is not None and value > domain.upper:
                 reasons.append(f"{column}=out_of_range")
 
     if values:
