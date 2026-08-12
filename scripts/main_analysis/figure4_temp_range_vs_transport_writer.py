@@ -6,6 +6,14 @@ from matplotlib.lines import Line2D
 import seaborn as sns
 import koreanize_matplotlib
 
+from project_modules.plot_style import (
+    apply_plot_style,
+    get_station_style,
+    set_bin_edge_ticks,
+    OVERALL_COLOR,
+    REFERENCE_COLOR
+    )
+
 from project_modules.area_name_mapper import AREA_FIRE_STATION_NAME_MAP
 
 from data_modules.data_io import (
@@ -50,10 +58,14 @@ def plot(base_table: pd.DataFrame) -> Figure:
         전체평균이송수=("이송수", "mean")
         ).reset_index()
 
-    figure, axis = plt.subplots(figsize=(9, 6))
+    # 평균 기온은 관측소의 시간별 기온을 연월, 시간대, 지역별로 평균한 값이다.
+    # 따라서 하루 단위 폭염이나 한파는 이 값에 남지 않는다.
+
+    apply_plot_style()
+
+    figure, axis = plt.subplots(figsize=(10, 6))
 
     stations = list(AREA_FIRE_STATION_NAME_MAP.keys())
-    colors = sns.color_palette("tab10", n_colors=len(stations))
 
     temperature_order = list(base_table["기온구간"].cat.categories)
 
@@ -72,15 +84,11 @@ def plot(base_table: pd.DataFrame) -> Figure:
         .reset_index()
     )
 
-    n_stations = len(stations)
-
-    n_bars = n_stations + 1
-    group_width = 0.8
-    bar_width = group_width / n_bars
-
     x = np.arange(len(temperature_order))
 
-    for i, (station, color) in enumerate(zip(stations, colors)):
+    for station in stations:
+        style = get_station_style(station)
+
         values = (
             station_data[station_data["소방서"] == station]
             .set_index("기온구간")
@@ -88,30 +96,19 @@ def plot(base_table: pd.DataFrame) -> Figure:
             .to_numpy()
             )
 
-        positions = x - group_width / 2 + bar_width / 2 + i * bar_width
-
-        axis.bar(positions, values, width=bar_width, color=color, label=station)
+        axis.plot(x, values, label=station, color=style["color"],
+                  marker=style["marker"], linestyle=style["linestyle"],
+                  linewidth=2, markersize=7)
 
     overall_values = overall_data["전체평균이송수"].to_numpy()
 
-    overall_positions = x - group_width / 2 + bar_width / 2 + n_stations * bar_width
+    axis.plot(x, overall_values, label="전체 평균", color=OVERALL_COLOR,
+              marker="o", linewidth=4, markersize=9, alpha=0.9, zorder=1)
 
-    axis.bar(overall_positions, overall_values, width=bar_width,
-             color="lightgray", edgecolor="black", label="전체 평균")
-
-
-    axis.set_xticks(x)
-    axis.set_xticklabels(temperature_order)
-
-    half_group_width = group_width / 2
-
-    axis.set_xlim(
-        x[0] - half_group_width,
-        x[-1] + half_group_width
-    )
+    set_bin_edge_ticks(axis, bins, first_edge_position=-0.5)
 
     axis.set_title("평균 기온 구간별 평균 이송 수")
-    axis.set_xlabel("평균 기온 구간 / ℃")
+    axis.set_xlabel("평균 기온 / ℃")
     axis.set_ylabel("평균 이송 수")
 
     axis.set_ylim(bottom=0)
@@ -137,6 +134,7 @@ def plot(base_table: pd.DataFrame) -> Figure:
     legend.get_frame().set_linewidth(1.0)
 
     figure.tight_layout()
+
     return figure
 
 def main() -> None:

@@ -6,6 +6,13 @@ from matplotlib.lines import Line2D
 import seaborn as sns
 import koreanize_matplotlib
 
+from project_modules.plot_style import (
+    apply_plot_style,
+    get_station_style,
+    OVERALL_COLOR,
+    REFERENCE_COLOR
+    )
+
 from project_modules.area_name_mapper import AREA_FIRE_STATION_NAME_MAP
 
 from data_modules.data_io import (
@@ -25,14 +32,20 @@ def plot(base_table: pd.DataFrame) -> Figure:
     if base_table.empty:
         return None
 
-    figure, axis = plt.subplots(figsize=(9, 6))
+    # 평균 기온은 관측소의 시간별 기온을 연월, 시간대, 지역별로 평균한 값이다.
+    # 따라서 하루 단위 폭염이나 한파는 이 값에 남지 않는다.
+
+    apply_plot_style()
+
+    figure, axis = plt.subplots(figsize=(11, 7))
 
     stations = list(AREA_FIRE_STATION_NAME_MAP.keys())
-    colors = sns.color_palette("tab10", n_colors=len(stations))
 
     legend_handles = []
 
-    for station, color in zip(stations, colors):
+    for station in stations:
+        style = get_station_style(station)
+        color = style["color"]
         station_data = (
             base_table[base_table["소방서"] == station][["평균기온", "이송수"]]
             .dropna()
@@ -43,8 +56,9 @@ def plot(base_table: pd.DataFrame) -> Figure:
             x="평균기온",
             y="이송수",
             color=color,
-            alpha=0.4,
-            s=35,
+            marker=style["marker"],
+            alpha=0.3,
+            s=26,
             ax=axis
         )
 
@@ -54,7 +68,7 @@ def plot(base_table: pd.DataFrame) -> Figure:
             y="이송수",
             scatter=False,
             color=color,
-            line_kws={"linewidth": 2},
+            line_kws={"linewidth": 2.4, "linestyle": style["linestyle"]},
             ax=axis
         )
 
@@ -76,7 +90,7 @@ def plot(base_table: pd.DataFrame) -> Figure:
                 y_position,
                 f"R² = {r_squared:.3f}",
                 color="black",
-                fontsize=9,
+                fontsize=12,
                 fontweight="bold",
                 ha="left",
                 va="bottom"
@@ -86,7 +100,7 @@ def plot(base_table: pd.DataFrame) -> Figure:
             Line2D(
                 [0],
                 [0],
-                marker="o",
+                marker=style["marker"],
                 linestyle="None",
                 markerfacecolor=color,
                 markeredgecolor=color,
@@ -98,7 +112,8 @@ def plot(base_table: pd.DataFrame) -> Figure:
                 [0],
                 [0],
                 color=color,
-                linewidth=2,
+                linewidth=2.4,
+                linestyle=style["linestyle"],
                 label=f"{station} 회귀선"
             )
         ])
@@ -131,6 +146,7 @@ def plot(base_table: pd.DataFrame) -> Figure:
     legend.get_frame().set_linewidth(1.0)
 
     figure.tight_layout()
+
     return figure
 
 def main() -> None:
