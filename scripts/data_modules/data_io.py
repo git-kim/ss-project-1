@@ -44,6 +44,54 @@ def read_data_file_into_dataframe(file_path: str | Path, encoding: str)\
 
     raise ValueError(f"Unsupported file: {path}")
 
+def load_specific_data_files_into_single_dataframe(
+        file_paths: list[str | Path], encoding: str)\
+            -> tuple[pd.DataFrame,list[dict[str, object]]]:
+    if not file_paths:
+        raise FileNotFoundError("No data files given.")
+
+    dataframes = []
+    file_info = []
+
+    for file_path in file_paths:
+        try:
+            dataframe = read_data_file_into_dataframe(
+                file_path, encoding=encoding)
+
+            file_info.append({
+                "file": str(file_path),
+                "rows": len(dataframe),
+                "columns": len(dataframe.columns),
+                "status": "empty" if dataframe.empty else "loaded",
+            })
+
+            if dataframe.empty:
+                continue
+
+            dataframe = dataframe.copy()
+
+            if "source_file" in dataframe.columns:
+                dataframe = dataframe.rename(columns={"source_file": "_source_file"})
+
+            dataframe.insert(0, "source_file", str(file_path))
+
+            dataframes.append(dataframe)
+
+        except Exception as error:
+            file_info.append({
+                "file": str(file_path),
+                "rows": 0,
+                "columns": 0,
+                "status": f"error: {error}",
+            })
+
+    if not dataframes:
+        return pd.DataFrame(), file_info
+
+    dataframe = pd.concat(dataframes, ignore_index=True, sort=False)
+
+    return dataframe, file_info
+
 def load_data_files_into_single_dataframe(input_path: str, is_recursive: bool,
                                           encoding: str)\
     -> tuple[pd.DataFrame, list[dict[str, object]]]:
