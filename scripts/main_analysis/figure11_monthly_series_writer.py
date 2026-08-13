@@ -6,9 +6,7 @@ from matplotlib.figure import Figure
 import koreanize_matplotlib
 
 from project_modules.plot_style import (
-    apply_plot_style,
-    get_station_color,
-    REFERENCE_COLOR
+    apply_plot_style
     )
 
 from data_modules.data_io import (
@@ -28,8 +26,7 @@ TEMPERATURE_COLOR = "#1F4E79"
 def point_at_axis(axis, color: str, tail, head_x) -> None:
     """
     Draws an arrow from a point on a curve towards the axis it should be read
-    against. With counts on the left and temperature on the right there is
-    otherwise nothing saying which scale belongs to which line.
+    against.
 
     tail: (x, y) of a real data point, in data coordinates.
     head_x: x the arrow points at, level with the tail.
@@ -58,12 +55,7 @@ def plot(base_table: pd.DataFrame) -> Figure:
              평균기온=("평균기온", "mean"))
         )
 
-    # months where most stations returned nothing would draw a dip that is a
-    # collection gap, not a real drop
     monthly.loc[monthly["이송수결측률"] > MISSING_RATE_LIMIT, "총이송수"] = None
-
-    # 평균 기온은 연월, 시간대별 평균 기온을 그 달의 전 시간대와 6개 소방서에
-    # 걸쳐 다시 평균한 값이다. 원자료의 단순 월평균이 아니다.
 
     apply_plot_style()
 
@@ -78,8 +70,6 @@ def plot(base_table: pd.DataFrame) -> Figure:
     axis.set_ylabel("6개 소방서 월간 총 건수")
     axis.set_ylim(bottom=0)
 
-    # empty margins on both sides so the axis arrows below sit clear of the
-    # series instead of crossing it
     first, last = monthly["일시"].iloc[0], monthly["일시"].iloc[-1]
     axis.set_xlim(first - pd.DateOffset(months=11),
                   last + pd.DateOffset(months=11))
@@ -92,11 +82,8 @@ def plot(base_table: pd.DataFrame) -> Figure:
                           label="평균 기온")
     temperature_axis.set_ylabel("평균 기온 / °C")
 
-    # the twin axis would otherwise draw a second grid over the first one
     temperature_axis.grid(False)
 
-    # counts belong to the left axis, temperature to the right one. each arrow
-    # starts on a real data point so it reads as belonging to that curve
     point_at_axis(axis, DISPATCH_COLOR,
                   (first, monthly["총출동수"].iloc[0]),
                   first - pd.DateOffset(months=10))
@@ -111,9 +98,7 @@ def plot(base_table: pd.DataFrame) -> Figure:
     temperature_handles, temperature_labels = \
         temperature_axis.get_legend_handles_labels()
 
-    # legend sits above the axes, since the twin axis draws over anything
-    # placed inside them
-    legend = temperature_axis.legend(
+    temperature_axis.legend(
         handles + temperature_handles, labels + temperature_labels,
         loc="lower left", bbox_to_anchor=(0, 1.01), ncol=3, frameon=False)
 

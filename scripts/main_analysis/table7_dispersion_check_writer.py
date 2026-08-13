@@ -36,8 +36,6 @@ def get_dispersion_table(base_table: pd.DataFrame) -> pd.DataFrame:
     for target_column in ["출동수", "이송수"]:
         formula = MODEL_FORMULA.format(target=target_column)
 
-        # one model on the whole panel: the station interaction is inside the
-        # formula, so fitting per station would drop that structure
         poisson_result = smf.glm(formula, data=df_clean,
                                  family=sm.families.Poisson()).fit()
 

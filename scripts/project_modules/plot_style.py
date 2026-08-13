@@ -1,8 +1,5 @@
 import matplotlib as mpl
 
-# six separate hues, kept muted rather than bright, so filled confidence
-# bands still tell the stations apart; marker, line style and hatch repeat
-# the same distinction for readers who cannot rely on color
 STATION_STYLE_MAP = {
     "강남소방서": {"area": "서울", "color": "#1F4E79", "marker": "o",
                 "linestyle": "-", "hatch": ""},
@@ -27,7 +24,6 @@ FONT_SIZES = {
     "axes.labelsize": 16,
     "xtick.labelsize": 14,
     "ytick.labelsize": 14,
-    # legends read smallest on a projected slide, so this one gains the most
     "legend.fontsize": 15,
     "figure.titlesize": 21
 }
@@ -37,6 +33,7 @@ def apply_plot_style() -> None:
     Note: Call after importing koreanize_matplotlib so the Korean font stays.
     """
     mpl.rcParams.update(FONT_SIZES)
+    
     mpl.rcParams.update({
         "axes.grid": True,
         "grid.alpha": 0.25,
@@ -44,10 +41,9 @@ def apply_plot_style() -> None:
         "hatch.linewidth": 0.6,
         "savefig.facecolor": "white",
         "figure.facecolor": "white"
-    })
+        })
+    
     mpl.rcParams.update({
-        # ticks point inward on all four sides, and the frame is thick enough
-        # that the corner ticks do not look ragged against it
         "axes.linewidth": 1.6,
         "xtick.direction": "in",
         "ytick.direction": "in",
@@ -57,7 +53,7 @@ def apply_plot_style() -> None:
         "ytick.major.size": 5,
         "xtick.major.width": 1.0,
         "ytick.major.width": 1.0
-    })
+        })
 
 def set_bin_edge_ticks(axis, bin_edges: list, first_edge_position: float,
                        step: float = 1.0) -> None:

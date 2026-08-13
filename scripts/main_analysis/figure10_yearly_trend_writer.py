@@ -38,9 +38,10 @@ def plot(base_table: pd.DataFrame) -> Figure:
     df = add_year_column(base_table)
 
     yearly_temperature = df.groupby("연도")["평균기온"].mean()
-
-    # 평균 기온은 연월, 시간대별 평균 기온을 그 해의 전 시간대와 6개 소방서에
-    # 걸쳐 다시 평균한 값이다. 원자료의 단순 연평균이 아니다.
+    # The value is calculated by averaging the hourly mean temperatures
+    # for each year-month across all time slots in that year and
+    # across the six fire stations.
+    # It is not a simple annual average of the raw data.
 
     apply_plot_style()
 
@@ -72,8 +73,6 @@ def plot(base_table: pd.DataFrame) -> Figure:
                               linewidth=1.8, marker="s", markersize=4,
                               label="평균 기온")
 
-        # fixed range so the nearly flat yearly temperature is not read as a
-        # large swing next to the count lines
         temperature_axis.set_ylim(0, 30)
         temperature_axis.grid(False)
 

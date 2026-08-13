@@ -46,7 +46,6 @@ def get_irr_comparison_table(base_table: pd.DataFrame,
     for target_column in ["출동수", "이송수"]:
         formula = MODEL_FORMULA.format(target=target_column)
 
-        # same formula, two families: only the dispersion assumption differs
         poisson_result = smf.glm(formula, data=df_clean,
                                  family=sm.families.Poisson()).fit()
         negative_binomial_result, _ = fit_negative_binomial(formula, df_clean)

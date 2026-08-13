@@ -72,9 +72,6 @@ def get_age_group_table(frames: dict[str, pd.DataFrame],
             .rename(columns={"size": "건수"})
             )
 
-        # a wide temperature range covers more hours than a narrow one, so
-        # raw totals are not comparable; count the hours that landed in each
-        # range and divide by it below
         cell_counts = (
             merged[[*group_columns, *key_columns]]
             .drop_duplicates()
@@ -85,9 +82,6 @@ def get_age_group_table(frames: dict[str, pd.DataFrame],
 
         result = pd.merge(counts, cell_counts, on=group_columns, how="left")
 
-        # 관측N counts (연월, 시간대, 지역) combinations, and one of those holds
-        # the same hour of every day in that month, so this is per combination
-        # and not per hour
         result["연월시간대당평균건수"] = result["건수"] / result["관측N"]
         result["구성비"] = (
             result["건수"]

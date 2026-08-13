@@ -27,11 +27,12 @@ def get_yearly_trend_table(base_table: pd.DataFrame) -> pd.DataFrame:
              총출동수=("출동수", "sum"),
              총이송수=("이송수", "sum"),
              이송수결측N=("이송수", lambda counts: counts.isna().sum()),
-             평균기온=("평균기온", "mean"))
-        )
+             평균기온=("평균기온", "mean")
+             )
+             )
 
-    result["출동수 전년대비"] = result["총출동수"].pct_change() * 100
-    result["이송수 전년대비"] = result["총이송수"].pct_change() * 100
+    result["출동수 전년대비"] = result["총출동수"].pct_change() * 100.0
+    result["이송수 전년대비"] = result["총이송수"].pct_change() * 100.0
 
     return result
 

@@ -58,9 +58,6 @@ def plot(base_table: pd.DataFrame) -> Figure:
         전체평균출동수=("출동수", "mean")
         ).reset_index()
 
-    # 평균 기온은 관측소의 시간별 기온을 연월, 시간대, 지역별로 평균한 값이다.
-    # 따라서 하루 단위 폭염이나 한파는 이 값에 남지 않는다.
-
     apply_plot_style()
 
     figure, axis = plt.subplots(figsize=(10, 6))
