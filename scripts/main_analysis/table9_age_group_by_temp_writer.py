@@ -84,7 +84,11 @@ def get_age_group_table(frames: dict[str, pd.DataFrame],
             )
 
         result = pd.merge(counts, cell_counts, on=group_columns, how="left")
-        result["시간당평균건수"] = result["건수"] / result["관측N"]
+
+        # 관측N counts (연월, 시간대, 지역) combinations, and one of those holds
+        # the same hour of every day in that month, so this is per combination
+        # and not per hour
+        result["연월시간대당평균건수"] = result["건수"] / result["관측N"]
         result["구성비"] = (
             result["건수"]
             / result.groupby(group_columns, observed=True)["건수"]

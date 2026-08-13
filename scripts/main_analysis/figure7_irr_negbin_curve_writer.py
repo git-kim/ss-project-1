@@ -18,6 +18,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
+from matplotlib.lines import Line2D
 import koreanize_matplotlib
 
 from project_modules.plot_style import (
@@ -36,6 +37,12 @@ BASE_OUTPUT_PATH = PROJECT_DIRECTORY_PATH / "outputs/main"
 
 GRID_SIZE = 80
 AXIS_TEMPERATURE_RANGE = (-10, 35)
+
+# filled confidence bands from three stations covered each other (강남 and 강동
+# overlapped over the whole range), so the interval is shown as a bar at a few
+# temperatures instead, nudged sideways per station so the bars stay apart
+ERROR_BAR_TEMPERATURES = [-5, 0, 5, 10, 15, 20, 25, 30]
+ERROR_BAR_OFFSETS = (-0.6, 0.0, 0.6)
 
 PANELS = {
     "서울 3개소": ["강남소방서", "강동소방서", "노원소방서"],
@@ -65,9 +72,10 @@ def plot(base_table: pd.DataFrame, target_column: str) -> Figure:
 
     figure, axes = plt.subplots(1, 2, figsize=(11, 5.2), sharey=True)
 
-    # split so the confidence bands stop overlapping each other
+    # split so the three Seoul stations are read against each other, not
+    # against the rest
     for axis, (panel_title, panel_stations) in zip(axes, PANELS.items()):
-        for station in panel_stations:
+        for station, offset in zip(panel_stations, ERROR_BAR_OFFSETS):
             minimum, maximum = observed_range.loc[station]
 
             # each station is drawn only over the temperatures it actually saw
@@ -87,8 +95,21 @@ def plot(base_table: pd.DataFrame, target_column: str) -> Figure:
             axis.plot(temp_grid, irr, label=station, color=style["color"],
                       linestyle=style["linestyle"], linewidth=2.4)
 
-            axis.fill_between(temp_grid, lower, upper, color=style["color"],
-                              alpha=0.15)
+            # same rule as the curve: no bar outside the observed range
+            bar_temperatures = np.array(
+                [temperature for temperature in ERROR_BAR_TEMPERATURES
+                 if minimum <= temperature <= maximum])
+
+            if bar_temperatures.size:
+                bar_irr, bar_lower, bar_upper = get_irr_with_ci(
+                    result, covariates, bar_temperatures,
+                    REFERENCE_TEMPERATURE)
+
+                axis.errorbar(
+                    bar_temperatures + offset, bar_irr,
+                    yerr=[bar_irr - bar_lower, bar_upper - bar_irr],
+                    fmt=style["marker"], markersize=5, color=style["color"],
+                    linestyle="none", capsize=3, elinewidth=1.4)
 
         axis.axhline(1.0, color=REFERENCE_COLOR, linestyle="--",
                      label=f"기준선 ({REFERENCE_TEMPERATURE}°C = 1.0)")
@@ -99,14 +120,31 @@ def plot(base_table: pd.DataFrame, target_column: str) -> Figure:
         axis.set_xlim(*AXIS_TEMPERATURE_RANGE)
         axis.set_xticks(range(AXIS_TEMPERATURE_RANGE[0],
                               AXIS_TEMPERATURE_RANGE[1] + 1, 5))
-        axis.legend(loc="upper left")
+
+        # the bars carry no label of their own, so the legend needs one entry
+        # explaining what they are
+        handles, labels = axis.get_legend_handles_labels()
+        interval_handle = Line2D([], [], color=REFERENCE_COLOR, marker="|",
+                                 linestyle="none", markersize=11,
+                                 markeredgewidth=1.6)
+
+        # a touch under the global size: this legend carries five entries and
+        # has to sit inside the panel without covering a curve
+        axis.legend([*handles, interval_handle],
+                    [*labels, "세로 막대 = 95% 신뢰 구간"],
+                    loc="upper left", fontsize=13)
+
         axis.grid(True, alpha=0.3)
 
     metric_name = target_column[:2]
 
     axes[0].set_ylabel(f"{metric_name} 발생률비")
 
-    figure.suptitle(f"평균 기온별 {metric_name} 발생률비 (음이항 회귀, 연도 통제)")
+    # 시간대 and 연도 enter the formula additively, so they cancel in the
+    # temperature contrast and the curve is the same whichever one is picked;
+    # 소방서 interacts with the spline, so it gets a curve of its own instead
+    figure.suptitle(
+        f"평균 기온별 {metric_name} 발생률비 (음이항 회귀, 시간대 · 연도 통제)")
 
     figure.tight_layout()
 

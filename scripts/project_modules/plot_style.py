@@ -22,13 +22,14 @@ OVERALL_COLOR = "#7A828C"
 REFERENCE_COLOR = "#333333"
 
 FONT_SIZES = {
-    "font.size": 14,
-    "axes.titlesize": 18,
-    "axes.labelsize": 15,
-    "xtick.labelsize": 13,
-    "ytick.labelsize": 13,
-    "legend.fontsize": 13,
-    "figure.titlesize": 20
+    "font.size": 15,
+    "axes.titlesize": 19,
+    "axes.labelsize": 16,
+    "xtick.labelsize": 14,
+    "ytick.labelsize": 14,
+    # legends read smallest on a projected slide, so this one gains the most
+    "legend.fontsize": 15,
+    "figure.titlesize": 21
 }
 
 def apply_plot_style() -> None:

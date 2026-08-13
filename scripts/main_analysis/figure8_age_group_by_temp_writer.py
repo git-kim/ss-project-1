@@ -28,13 +28,22 @@ BASE_OUTPUT_PATH = PROJECT_DIRECTORY_PATH / "outputs/main"
 REFERENCE_LABEL = "10 ~ 15"
 
 # nine lines were unreadable, so decades are merged into bands; age is
-# ordinal, so the bands take one hue that darkens with age, and 9세 이하 is
-# set apart because its drop is not read as a temperature effect
+# ordinal, so the bands take one hue that darkens with age.
+#
+# 9세 이하 and 미상 are both left out. The source data reclassified one into
+# the other partway through: 9세 이하 is 1,977 records in 2020, 14 in 2021
+# (five of the six stations report none all year), then 41,158 in 2022. Pooled
+# over years that inversion flips the sign of the curve — 30~35℃ comes out at
+# -37.7% against +44% when each year is computed on its own — so the line
+# would point the wrong way rather than merely being noisy.
+# 10대 is kept out of the 20~39세 band. Merging it there is what the decade
+# figures say not to do: at 30~35℃ 10대 is +79% against +25/+23 for 20·30대,
+# so the band average (+34%) hid the single steepest group. Every other merge
+# holds up — 60대 +40 with 70대 +44, 40대 +26 with 50대 +35.
 AGE_BAND_MAP = {
-    "9세 이하": "9세 이하",
-    "10대": "10~39세",
-    "20대": "10~39세",
-    "30대": "10~39세",
+    "10대": "10대",
+    "20대": "20~39세",
+    "30대": "20~39세",
     "40대": "40~59세",
     "50대": "40~59세",
     "60대": "60~79세",
@@ -42,9 +51,12 @@ AGE_BAND_MAP = {
     "80세 이상": "80세 이상",
 }
 
+# the four adult bands keep one hue darkening with age. 10대 sits at the young
+# end but behaves like the old end, so it gets a hue of its own rather than
+# the lightest step of a ramp it does not belong to
 AGE_BAND_STYLES = {
-    "9세 이하": ("#8A9099", "o", 1.6, "--"),
-    "10~39세": ("#E8B48D", "s", 2.2, "-"),
+    "10대": ("#2E6F8E", "o", 2.6, "--"),
+    "20~39세": ("#E8B48D", "s", 2.2, "-"),
     "40~59세": ("#D08A52", "^", 2.4, "-"),
     "60~79세": ("#A85A2B", "D", 2.8, "-"),
     "80세 이상": ("#7A2418", "P", 3.2, "-"),
@@ -70,17 +82,31 @@ def plot(age_group_table: pd.DataFrame) -> Figure:
     figure, axes = plt.subplots(1, 2, figsize=(13, 5.8), sharey=True)
 
     for axis, metric in zip(axes, metrics):
-        # pooled over stations: total events divided by total observed cells
-        totals = (
-            df[df["지표"] == metric]
-            .groupby(["기온구간", "연령대"], observed=True)[["건수", "관측N"]]
-            .sum()
-            .reset_index()
-            )
-        totals["시간당평균건수"] = totals["건수"] / totals["관측N"]
+        metric_rows = df[df["지표"] == metric]
 
-        rates = totals.pivot(index="기온구간", columns="연령대",
-                             values="시간당평균건수")
+        # 관측N is repeated on every age row of a station-range group, so
+        # summing it straight would count a station's cells once per decade
+        # folded into the band (three times over for 10~39세). Take each
+        # station's value once; the denominator never depended on age anyway.
+        cells = (
+            metric_rows
+            .drop_duplicates(["소방서", "기온구간"])
+            .groupby("기온구간", observed=True)["관측N"]
+            .sum()
+            )
+
+        counts = (
+            metric_rows
+            .groupby(["기온구간", "연령대"], observed=True)["건수"]
+            .sum()
+            .unstack("연령대")
+            )
+
+        # pooled over stations: total events divided by total observed
+        # (연월, 시간대, 지역) combinations. which stations reach a given range
+        # differs by range, so the ends of the axis carry some station-mix
+        # difference alongside the temperature effect
+        rates = counts.div(cells, axis=0)
         rates = rates.reindex(TEMPERATURE_LABELS).dropna(how="all")
         rates = rates[list(AGE_BAND_STYLES)]
 
@@ -96,7 +122,10 @@ def plot(age_group_table: pd.DataFrame) -> Figure:
         axis.axhline(1.0, color=REFERENCE_COLOR, linestyle=":", linewidth=1.4,
                      label=f"기준선 ({REFERENCE_LABEL}°C = 1.0)")
         axis.set_xlabel("평균 기온 / °C")
-        axis.set_title(metric)
+
+        # 지표 is a column value ("출동수"), which is not how it is spelled in
+        # running text
+        axis.set_title(f"{metric[:2]} 수")
         set_bin_edge_ticks(axis, TEMPERATURE_BINS, first_edge_position=-0.5)
         axis.grid(True, alpha=0.3)
 

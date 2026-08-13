@@ -21,6 +21,24 @@ BASE_OUTPUT_PATH = PROJECT_DIRECTORY_PATH / "outputs/main"
 
 MISSING_RATE_LIMIT = 0.2
 
+DISPATCH_COLOR = "#9A3324"
+TRANSPORT_COLOR = "#2E7D5B"
+TEMPERATURE_COLOR = "#1F4E79"
+
+def point_at_axis(axis, color: str, tail, head_x) -> None:
+    """
+    Draws an arrow from a point on a curve towards the axis it should be read
+    against. With counts on the left and temperature on the right there is
+    otherwise nothing saying which scale belongs to which line.
+
+    tail: (x, y) of a real data point, in data coordinates.
+    head_x: x the arrow points at, level with the tail.
+    """
+    axis.annotate("", xy=(head_x, tail[1]), xytext=tail,
+                  xycoords="data", textcoords="data",
+                  arrowprops={"arrowstyle": "->", "color": color,
+                              "linewidth": 1.8, "shrinkA": 2, "shrinkB": 0})
+
 def plot(base_table: pd.DataFrame) -> Figure:
     """
     Note: Close the figure after use.
@@ -52,23 +70,42 @@ def plot(base_table: pd.DataFrame) -> Figure:
     figure, axis = plt.subplots(figsize=(11.5, 5))
 
     axis.plot(monthly["일시"], monthly["총출동수"],
-              color="#9A3324", linewidth=1.8, label="월간 총 출동 수")
+              color=DISPATCH_COLOR, linewidth=1.8, label="월간 총 출동 수")
     axis.plot(monthly["일시"], monthly["총이송수"],
-              color="#2E7D5B", linewidth=1.5, linestyle="--",
+              color=TRANSPORT_COLOR, linewidth=1.5, linestyle="--",
               label="월간 총 이송 수")
     axis.set_xlabel("연도")
     axis.set_ylabel("6개 소방서 월간 총 건수")
     axis.set_ylim(bottom=0)
+
+    # empty margins on both sides so the axis arrows below sit clear of the
+    # series instead of crossing it
+    first, last = monthly["일시"].iloc[0], monthly["일시"].iloc[-1]
+    axis.set_xlim(first - pd.DateOffset(months=11),
+                  last + pd.DateOffset(months=11))
+
     axis.grid(True, alpha=0.3)
 
     temperature_axis = axis.twinx()
     temperature_axis.plot(monthly["일시"], monthly["평균기온"],
-                          color="#1F4E79", linewidth=1.4, alpha=0.65,
+                          color=TEMPERATURE_COLOR, linewidth=1.4, alpha=0.65,
                           label="평균 기온")
     temperature_axis.set_ylabel("평균 기온 / °C")
 
     # the twin axis would otherwise draw a second grid over the first one
     temperature_axis.grid(False)
+
+    # counts belong to the left axis, temperature to the right one. each arrow
+    # starts on a real data point so it reads as belonging to that curve
+    point_at_axis(axis, DISPATCH_COLOR,
+                  (first, monthly["총출동수"].iloc[0]),
+                  first - pd.DateOffset(months=10))
+    point_at_axis(axis, TRANSPORT_COLOR,
+                  (first, monthly["총이송수"].iloc[0]),
+                  first - pd.DateOffset(months=10))
+    point_at_axis(temperature_axis, TEMPERATURE_COLOR,
+                  (last, monthly["평균기온"].iloc[-1]),
+                  last + pd.DateOffset(months=10))
 
     handles, labels = axis.get_legend_handles_labels()
     temperature_handles, temperature_labels = \
@@ -78,7 +115,7 @@ def plot(base_table: pd.DataFrame) -> Figure:
     # placed inside them
     legend = temperature_axis.legend(
         handles + temperature_handles, labels + temperature_labels,
-        loc="lower left", bbox_to_anchor=(0, 1.01), ncol=2, frameon=False)
+        loc="lower left", bbox_to_anchor=(0, 1.01), ncol=3, frameon=False)
 
     figure.tight_layout()
 
